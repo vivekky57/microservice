@@ -1,0 +1,111 @@
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Logs
+*.log
+
+# Spring Boot specific
+# (if using embedded Tomcat, this folder may be created)
+spring.log
+
+# Environment files
+*.env
+.env.*
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+# Ignore gradle wrapper logs
+gradle-wrapper.properties.lock
+# Ignore generated IDEA files for gradle
+../.idea/
+out/
+
+# Eclipse
+*.launch
+.settings/
+.project
+.classpath
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# VS Code
+.vscode/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Docker
+**/Dockerfile
+**/docker-compose*.yml
+**/.dockerignore
+**/docker/
+
+# Kubernetes
+*.yaml
+*.yml
+
+# Database
+*.h2.db
+*.mv.db
+*.sql
+*.db
+
+# Test Reports
+/test-output/
+/surefire-reports/
+/jacoco.exec
+
+# Lombok
+lombok.config
+
+# Swagger
+/swagger-ui.html
+/swagger-ui/
+api-docs/
+
+# Backup & temp files
+*.tmp
+*.bak
+*.swp
+*~
+
+# Ignore compiled class files
+**/bin/
+**/build/
+
+# Ignore .idea and workspace storage
+.idea/
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/shelf/
+
+# Ignore local application properties
+application-local.yml
+application-local.properties
+application-dev.yml
+application-dev.properties
+
+# Ignore node_modules if using frontend
+node_modules/
