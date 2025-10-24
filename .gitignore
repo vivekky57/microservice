@@ -55,15 +55,15 @@ out/
 .DS_Store
 Thumbs.db
 
-# Docker
-**/Dockerfile
-**/docker-compose*.yml
-**/.dockerignore
-**/docker/
+## Docker
+#**/Dockerfile
+#**/docker-compose*.yml
+#**/.dockerignore
+#**/docker/
 
-# Kubernetes
-*.yaml
-*.yml
+## Kubernetes
+#*.yaml
+#*.yml
 
 # Database
 *.h2.db
