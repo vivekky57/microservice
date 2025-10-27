@@ -21,6 +21,10 @@ spring:
   config:
     import: "optional:configserver:http://localhost:8071/"
 
+  cloud:
+    openfeign:
+      circuitbreaker:
+        enabled: true
 management:
   endpoints:
     web:
@@ -41,6 +45,9 @@ management:
   info:
     env:
       enabled: true
+  metrics:
+    tags:
+      application: ${spring.application.name}
 
 eureka:
   instance:
@@ -63,10 +70,9 @@ logging:
     com:
       eazybytes:
         accounts: DEBUG
-  cloud:
-    openfeign:
-      circuitbreaker:
-        enabled: true
+  pattern:
+    level: "%5p [${spring.application.name},%X{trace_id},%X{span_id}]"
+
 
 resilience4j.circuitbreaker:
   configs:
